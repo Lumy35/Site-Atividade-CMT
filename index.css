@@ -1,0 +1,75 @@
+body {
+    color: black;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+nav a:hover {
+    color: blue;
+}
+nav {
+    background-color: rgb(147, 178, 236);
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nomes li {
+    opacity: 0;
+    animation: aparecer 1s forwards;
+}
+.nomes li:nth-child(1) { animation-delay: 0s; }
+.nomes li:nth-child(2) { animation-delay: 1s; }
+.nomes li:nth-child(3) { animation-delay: 2s; }
+.nomes li:nth-child(4) { animation-delay: 3s; }
+.nomes li:nth-child(5) { animation-delay: 4s; }
+.nomes li:nth-child(6) { animation-delay: 5s; }
+.nomes li:nth-child(7) { animation-delay: 6s; }
+.nomes li:nth-child(8) { animation-delay: 7s; }
+.nomes li:nth-child(9) { animation-delay: 8s; }
+.nomes li:nth-child(10) { animation-delay: 9s; }
+@keyframes aparecer {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.logo {
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+    margin: 0 auto;
+    transform: translateX(-50px)
+}
+.titulo {
+    text-align: center;
+}
+footer img {
+    width: 30px;
+    height: 29px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(147, 178, 236);
+}
+footer a {
+    margin: 20px;
+    text-align: center;
+}
+footer p {
+    margin-top: 2px;
+}
+.container {
+    padding: 0px 50px;
+    user-select: none;
+}
